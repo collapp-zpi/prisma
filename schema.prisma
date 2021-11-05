@@ -32,6 +32,7 @@ model DraftPlugin {
   createdAt   DateTime         @default(now())
   updatedAt   DateTime         @default(now())
   isPending   Boolean          @default(false)
+  isBuilding  Boolean          @default(false)
   icon        String?
 
   source      File?
